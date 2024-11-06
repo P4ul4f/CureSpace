@@ -81,7 +81,7 @@ export const PasskeyModal = () => {
             />
           </AlertDialogTitle>
           <AlertDialogDescription>
-            To access the admin page, please enter the passkey.
+            To access the admin page, please enter the passkey. (123456)
           </AlertDialogDescription>
         </AlertDialogHeader>
         <div>
@@ -111,7 +111,7 @@ export const PasskeyModal = () => {
             onClick={(e) => validatePasskey(e)}
             className="shad-primary-btn w-full"
           >
-            Enter Admin Passkey
+            Enter Admin Passkey 
           </AlertDialogAction>
         </AlertDialogFooter>
       </AlertDialogContent>

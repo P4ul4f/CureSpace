@@ -104,7 +104,17 @@ const RegisterForm = ({ user }: { user: User }) => {
         className="flex-1 space-y-12"
       >
         <section className="space-y-4">
-          <h1 className="header">Welcome 👋</h1>
+          <div className="flex gap-4">
+            <h1 className="header">Welcome</h1>
+            <Image
+              src="/assets/images/ola.png"
+              height={40}
+              width={40}
+              alt="welcome"
+              className="mb-12 h-10 w-fit"
+            />
+          </div>
+
           <p className="text-dark-700">Let us know more about yourself.</p>
         </section>
 

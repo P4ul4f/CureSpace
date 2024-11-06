@@ -13,13 +13,16 @@ const AdminPage = async () => {
     <div className="mx-auto flex max-w-7xl flex-col space-y-14">
       <header className="admin-header">
         <Link href="/" className="cursor-pointer">
-          <Image
-            src="/assets/icons/logo-full.svg"
-            height={32}
-            width={162}
-            alt="logo"
-            className="h-8 w-fit"
-          />
+          <div className="flex gap-4 max-h-10">
+            <Image
+              src="/assets/images/logom.png"
+              height={1000}
+              width={1000}
+              alt="patient"
+              className="mb-12 h-10 w-fit"
+            />
+            <span className="text-white text-2xl font-bold">CureSpace</span>
+          </div>
         </Link>
 
         <p className="text-16-semibold">Admin Dashboard</p>
@@ -27,7 +30,16 @@ const AdminPage = async () => {
 
       <main className="admin-main">
         <section className="w-full space-y-4">
-          <h1 className="header">Welcome 👋</h1>
+          <div className="flex gap-4">
+            <h1 className="header">Welcome</h1>
+            <Image
+              src="/assets/images/ola.png"
+              height={45}
+              width={45}
+              alt="welcome"
+              className="mb-12 h-10 w-fit"
+            />
+          </div>
           <p className="text-dark-700">
             Start the day with managing new appointments
           </p>
