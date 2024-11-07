@@ -13,23 +13,26 @@ const Home = ({ searchParams }: SearchParamProps) => {
 
       <section className="remove-scrollbar container my-auto">
         <div className="sub-container max-w-[496px]">
-        <div className="flex gap-4">
-            <Image
-              src="/assets/images/logom.png"
-              height={1000}
-              width={1000}
-              alt="patient"
-              className="mb-12 h-10 w-fit"
-            />
-            <span className="text-white md:text-4xl sm:text-2xl font-bold">CureSpace</span>
-          </div>
-          
+          <Link href="/" className="cursor-pointer">
+            <div className="flex gap-4">
+              <Image
+                src="/assets/images/logom.png"
+                height={1000}
+                width={1000}
+                alt="patient"
+                className="mb-12 h-10 w-fit"
+              />
+              <span className="text-white md:text-4xl sm:text-2xl font-bold">
+                CureSpace
+              </span>
+            </div>
+          </Link>
 
           <PatientForm />
 
           <div className="text-14-regular mt-20 flex justify-between">
             <p className="justify-items-end text-dark-600 xl:text-left">
-              © 2024 CarePluse
+              © 2024 CureSpace
             </p>
             <Link href="/?admin=true" className="text-green-500">
               Admin
