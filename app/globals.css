@@ -65,7 +65,11 @@
   }
 
   .side-img {
-    @apply hidden h-full object-cover md:block;
+    @apply hidden h-full object-fill md:block right-0;
+  }
+
+  .side-img-ap {
+    @apply hidden h-full object-cover md:block right-0;
   }
 
   .copyright {
@@ -183,7 +187,7 @@
 
   /* =====  SHADCN OVERRIDES */
   .shad-primary-btn {
-    @apply bg-green-500 text-white !important;
+    @apply bg-teal-500 text-white !important;
   }
 
   .shad-danger-btn {
